@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="1280" viewBox="0 0 1040 1280" role="img" aria-labelledby="title desc">
+  <title id="title">CutiFlow leave approval process</title>
+  <desc id="desc">Swimlane for the PT Aruna Karya leave-request example. The employee submits, CutiFlow validates, the supervisor decides, and HR approves when the request is longer than three working days or is unpaid or special leave.</desc>
+  <rect width="1040" height="1280" fill="#f4f6f8"/>
+  <text x="28" y="34" fill="#0f172a" font-family="Inter, Liberation Sans, sans-serif" font-size="22" font-weight="650">CutiFlow — leave request to approval</text>
+  <text x="28" y="56" fill="#475569" font-family="Inter, Liberation Sans, sans-serif" font-size="13">PT Aruna Karya worked example. HR approval is required when working days exceed 3, or the leave is unpaid or special.</text>
+
+  <g font-family="Inter, Liberation Sans, sans-serif">
+    <rect x="24" y="76" width="248" height="1148" fill="#e7eef7" stroke="#1e3a5f" stroke-width="1.25"/>
+    <rect x="272" y="76" width="248" height="1148" fill="#e7f3ec" stroke="#1e3a5f" stroke-width="1.25"/>
+    <rect x="520" y="76" width="248" height="1148" fill="#f8f3e8" stroke="#1e3a5f" stroke-width="1.25"/>
+    <rect x="768" y="76" width="248" height="1148" fill="#f6eef4" stroke="#1e3a5f" stroke-width="1.25"/>
+    <rect x="24" y="76" width="248" height="36" fill="#1e3a5f"/>
+    <rect x="272" y="76" width="248" height="36" fill="#1e3a5f"/>
+    <rect x="520" y="76" width="248" height="36" fill="#1e3a5f"/>
+    <rect x="768" y="76" width="248" height="36" fill="#1e3a5f"/>
+    <text x="148" y="99" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="650">Employee</text>
+    <text x="396" y="99" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="650">CutiFlow</text>
+    <text x="644" y="99" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="650">Supervisor</text>
+    <text x="892" y="99" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="650">HR Admin</text>
+  </g>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.2 L 10 5 L 0 8.8 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.2 L 10 5 L 0 8.8 Z" fill="#0f6b45"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.2 L 10 5 L 0 8.8 Z" fill="#9f2d2d"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.2 L 10 5 L 0 8.8 Z" fill="#9a6700"/>
+    </marker>
+  </defs>
+
+  <g fill="none" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M148 176 L148 196" stroke="#334155" marker-end="url(#arrow)"/>
+    <path d="M148 406 L148 327" stroke="#334155"/>
+    <path d="M148 266 L148 327 L296 327" stroke="#334155" marker-end="url(#arrow)"/>
+    <path d="M396 362 L396 412" stroke="#334155" marker-end="url(#arrow)"/>
+    <path d="M366 442 L240 442" stroke="#9f2d2d" marker-end="url(#arrow-red)"/>
+    <path d="M396 472 L396 547 L536 547" stroke="#0f6b45" marker-end="url(#arrow-green)"/>
+    <path d="M644 582 L644 622" stroke="#334155" marker-end="url(#arrow)"/>
+    <path d="M644 682 L644 736" stroke="#9f2d2d" marker-end="url(#arrow-red)"/>
+    <path d="M614 652 L396 652 L396 812" stroke="#0f6b45" marker-end="url(#arrow-green)"/>
+    <path d="M426 842 L802 842" stroke="#0f6b45" marker-end="url(#arrow-green)"/>
+    <path d="M892 876 L892 932" stroke="#334155" marker-end="url(#arrow)"/>
+    <path d="M892 992 L892 1044" stroke="#9f2d2d" marker-end="url(#arrow-red)"/>
+    <path d="M862 962 L506 962" stroke="#0f6b45" marker-end="url(#arrow-green)"/>
+    <path d="M396 872 L396 928" stroke="#0f6b45" marker-end="url(#arrow-green)"/>
+    <path d="M396 996 L396 1044" stroke="#0f6b45" marker-end="url(#arrow-green)"/>
+    <path d="M674 652 L1000 652 L1000 1184 L40 1184 L40 442 L56 442" stroke="#9a6700" marker-end="url(#arrow-amber)"/>
+  </g>
+
+  <g font-family="Inter, Liberation Sans, sans-serif" font-size="12" font-weight="650">
+    <circle cx="148" cy="327" r="3.5" fill="#334155"/>
+    <rect x="292" y="428" width="26" height="16" rx="3" fill="#e7f3ec"/>
+    <text x="305" y="440" text-anchor="middle" fill="#9f2d2d">No</text>
+    <rect x="404" y="500" width="30" height="16" rx="3" fill="#e7f3ec"/>
+    <text x="419" y="512" text-anchor="middle" fill="#0f6b45">Yes</text>
+    <rect x="470" y="636" width="58" height="16" rx="3" fill="#e7f3ec"/>
+    <text x="499" y="648" text-anchor="middle" fill="#0f6b45">Approve</text>
+    <rect x="652" y="700" width="44" height="16" rx="3" fill="#f8f3e8"/>
+    <text x="674" y="712" text-anchor="middle" fill="#9f2d2d">Reject</text>
+    <rect x="760" y="636" width="50" height="16" rx="3" fill="#f8f3e8"/>
+    <text x="785" y="648" text-anchor="middle" fill="#9a6700">Return</text>
+    <rect x="560" y="826" width="30" height="16" rx="3" fill="#f8f3e8"/>
+    <text x="575" y="838" text-anchor="middle" fill="#0f6b45">Yes</text>
+    <rect x="404" y="888" width="26" height="16" rx="3" fill="#e7f3ec"/>
+    <text x="417" y="900" text-anchor="middle" fill="#0f6b45">No</text>
+    <rect x="640" y="946" width="58" height="16" rx="3" fill="#f6eef4"/>
+    <text x="669" y="958" text-anchor="middle" fill="#0f6b45">Approve</text>
+    <rect x="900" y="1008" width="44" height="16" rx="3" fill="#f6eef4"/>
+    <text x="922" y="1020" text-anchor="middle" fill="#9f2d2d">Reject</text>
+    <text x="70" y="1174" fill="#9a6700" font-size="11">Return to revise</text>
+  </g>
+
+  <g font-family="Inter, Liberation Sans, sans-serif">
+    <circle cx="148" cy="160" r="16" fill="#ffffff" stroke="#1e3a5f" stroke-width="1.75"/>
+    <text x="172" y="164" fill="#64748b" font-size="11">Leave needed</text>
+
+    <rect x="56" y="196" width="184" height="70" rx="8" fill="#ffffff" stroke="#1e3a5f" stroke-width="1.6"/>
+    <text x="148" y="226" text-anchor="middle" fill="#0f172a" font-size="14" font-weight="650">Submit leave request</text>
+    <text x="148" y="246" text-anchor="middle" fill="#64748b" font-size="11">Type, dates, reason</text>
+
+    <rect x="56" y="406" width="184" height="72" rx="8" fill="#ffffff" stroke="#1e3a5f" stroke-width="1.6"/>
+    <text x="148" y="436" text-anchor="middle" fill="#0f172a" font-size="14" font-weight="650">Revise request</text>
+    <text x="148" y="456" text-anchor="middle" fill="#64748b" font-size="11">Fix errors or comments</text>
+
+    <rect x="296" y="292" width="200" height="70" rx="8" fill="#ffffff" stroke="#1e3a5f" stroke-width="1.6"/>
+    <text x="396" y="322" text-anchor="middle" fill="#0f172a" font-size="14" font-weight="650">Validate request</text>
+    <text x="396" y="342" text-anchor="middle" fill="#64748b" font-size="11">Balance, notice, overlap</text>
+
+    <polygon points="396,412 426,442 396,472 366,442" fill="#fffbeb" stroke="#9a7040" stroke-width="1.6"/>
+    <path d="M384 430 L408 454 M408 430 L384 454" stroke="#9a7040" stroke-width="1.4"/>
+    <text x="396" y="406" text-anchor="middle" fill="#7c5a28" font-size="12" font-weight="650">Valid?</text>
+
+    <rect x="536" y="512" width="200" height="70" rx="8" fill="#ffffff" stroke="#1e3a5f" stroke-width="1.6"/>
+    <text x="636" y="542" text-anchor="middle" fill="#0f172a" font-size="14" font-weight="650">Review request</text>
+    <text x="636" y="562" text-anchor="middle" fill="#64748b" font-size="11">Team overlap is visible</text>
+
+    <polygon points="644,622 674,652 644,682 614,652" fill="#fffbeb" stroke="#9a7040" stroke-width="1.6"/>
+    <path d="M632 640 L656 664 M656 640 L632 664" stroke="#9a7040" stroke-width="1.4"/>
+    <text x="644" y="614" text-anchor="middle" fill="#7c5a28" font-size="12" font-weight="650">Decision</text>
+
+    <circle cx="644" cy="754" r="16" fill="#ffffff" stroke="#9f2d2d" stroke-width="3.25"/>
+    <text x="644" y="788" text-anchor="middle" fill="#9f2d2d" font-size="12" font-weight="650">Rejected</text>
+
+    <polygon points="396,812 426,842 396,872 366,842" fill="#fffbeb" stroke="#9a7040" stroke-width="1.6"/>
+    <path d="M384 830 L408 854 M408 830 L384 854" stroke="#9a7040" stroke-width="1.4"/>
+    <text x="396" y="806" text-anchor="middle" fill="#7c5a28" font-size="12" font-weight="650">HR needed?</text>
+
+    <rect x="802" y="808" width="176" height="68" rx="8" fill="#ffffff" stroke="#1e3a5f" stroke-width="1.6"/>
+    <text x="890" y="836" text-anchor="middle" fill="#0f172a" font-size="14" font-weight="650">HR review</text>
+    <text x="890" y="856" text-anchor="middle" fill="#64748b" font-size="11">Policy and attachments</text>
+
+    <polygon points="892,932 922,962 892,992 862,962" fill="#fffbeb" stroke="#9a7040" stroke-width="1.6"/>
+    <path d="M880 950 L904 974 M904 950 L880 974" stroke="#9a7040" stroke-width="1.4"/>
+    <text x="892" y="924" text-anchor="middle" fill="#7c5a28" font-size="12" font-weight="650">Decision</text>
+
+    <rect x="286" y="928" width="220" height="68" rx="8" fill="#ffffff" stroke="#1e3a5f" stroke-width="1.6"/>
+    <text x="396" y="954" text-anchor="middle" fill="#0f172a" font-size="14" font-weight="650">Update balance</text>
+    <text x="396" y="974" text-anchor="middle" fill="#0f172a" font-size="14" font-weight="650">and calendar</text>
+
+    <circle cx="396" cy="1078" r="16" fill="#ffffff" stroke="#0f6b45" stroke-width="3.25"/>
+    <text x="396" y="1112" text-anchor="middle" fill="#0f6b45" font-size="12" font-weight="650">Approved</text>
+
+    <circle cx="892" cy="1078" r="16" fill="#ffffff" stroke="#9f2d2d" stroke-width="3.25"/>
+    <text x="892" y="1112" text-anchor="middle" fill="#9f2d2d" font-size="12" font-weight="650">Rejected</text>
+  </g>
+
+  <text x="520" y="1246" text-anchor="middle" fill="#64748b" font-family="Inter, Liberation Sans, sans-serif" font-size="12">The amber line is the return path. It runs around the pool and comes back into Revise request.</text>
+  <text x="520" y="1266" text-anchor="middle" fill="#64748b" font-family="Inter, Liberation Sans, sans-serif" font-size="12">Annual balance changes only when annual leave or cuti bersama is approved. The employee is emailed on every decision.</text>
+</svg>

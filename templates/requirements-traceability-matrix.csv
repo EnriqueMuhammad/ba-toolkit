@@ -1,0 +1,2 @@
+requirement_id,requirement_type,statement,source,moscow,business_rule_ids,user_story_ids,use_case_ids,process_ref,test_case_ids,status,notes
+BRQ-01,Business,"Replace this row. State the outcome the sponsor wants, not the screen.",Workshop decision D1,Must,,US-01,,Submit request,TC-01,Draft,Delete this example row when you start a real matrix. Leave cells blank when the link does not exist yet.
