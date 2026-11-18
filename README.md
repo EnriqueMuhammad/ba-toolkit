@@ -4,7 +4,7 @@ Templates, one worked example, and the diagrams that go with them. Written for I
 
 The example is **CutiFlow**, a leave-request pilot for a fictional Indonesian company. The primary language is English. A few notes are in Bahasa Indonesia where a translation would hide a distinction (`cuti`, `izin`, cuti bersama).
 
-**Author:** [Enrique Muhammad Ilham](https://github.com/EnriqueMuhammad)
+**Author:** [Enrique Muhammad](https://github.com/EnriqueMuhammad)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Docs](https://github.com/EnriqueMuhammad/ba-toolkit/actions/workflows/docs.yml/badge.svg)](https://github.com/EnriqueMuhammad/ba-toolkit/actions/workflows/docs.yml)
@@ -117,6 +117,6 @@ Corrections that would stop another analyst copying a mistake are welcome. A sec
 
 ## License
 
-[MIT](LICENSE). Copyright © 2026 Enrique Muhammad Ilham.
+[MIT](LICENSE). Copyright © 2026 Enrique Muhammad.
 
 The license is there so a team can reuse the templates in their own work, including client projects.
