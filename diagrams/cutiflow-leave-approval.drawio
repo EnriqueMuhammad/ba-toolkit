@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="ba-toolkit" version="24.7.17">
+  <diagram id="cutiflow-leave-approval" name="Leave approval">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="body_e" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#1e3a5f;strokeWidth=1;fontColor=#64748b;fontSize=11;align=left;verticalAlign=bottom;spacingBottom=8;spacingLeft=8;fillColor=#e7eef7;" vertex="1" parent="1">
+          <mxGeometry x="24" y="112" width="248" height="1112" as="geometry" />
+        </mxCell>
+        <mxCell id="body_s" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#1e3a5f;strokeWidth=1;fontColor=#64748b;fontSize=11;align=left;verticalAlign=bottom;spacingBottom=8;spacingLeft=8;fillColor=#e7f3ec;" vertex="1" parent="1">
+          <mxGeometry x="272" y="112" width="248" height="1112" as="geometry" />
+        </mxCell>
+        <mxCell id="body_p" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#1e3a5f;strokeWidth=1;fontColor=#64748b;fontSize=11;align=left;verticalAlign=bottom;spacingBottom=8;spacingLeft=8;fillColor=#f8f3e8;" vertex="1" parent="1">
+          <mxGeometry x="520" y="112" width="248" height="1112" as="geometry" />
+        </mxCell>
+        <mxCell id="body_h" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#1e3a5f;strokeWidth=1;fontColor=#64748b;fontSize=11;align=left;verticalAlign=bottom;spacingBottom=8;spacingLeft=8;fillColor=#f6eef4;" vertex="1" parent="1">
+          <mxGeometry x="768" y="112" width="248" height="1112" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_e" value="Employee" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#1e3a5f;strokeWidth=1;fontStyle=1;fontSize=14;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=8;arcSize=0;fillColor=#1e3a5f;" vertex="1" parent="1">
+          <mxGeometry x="24" y="76" width="248" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_s" value="CutiFlow" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#1e3a5f;strokeWidth=1;fontStyle=1;fontSize=14;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=8;arcSize=0;fillColor=#1e3a5f;" vertex="1" parent="1">
+          <mxGeometry x="272" y="76" width="248" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_p" value="Supervisor" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#1e3a5f;strokeWidth=1;fontStyle=1;fontSize=14;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=8;arcSize=0;fillColor=#1e3a5f;" vertex="1" parent="1">
+          <mxGeometry x="520" y="76" width="248" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_h" value="HR Admin" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#1e3a5f;strokeWidth=1;fontStyle=1;fontSize=14;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=8;arcSize=0;fillColor=#1e3a5f;" vertex="1" parent="1">
+          <mxGeometry x="768" y="76" width="248" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#334155;" edge="1" parent="1" source="start" target="submit">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#334155;" edge="1" parent="1" source="submit" target="validate">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="148" y="327" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#334155;" edge="1" parent="1" source="revise" target="validate">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="148" y="327" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#334155;" edge="1" parent="1" source="validate" target="gw_valid">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#9f2d2d;fontColor=#9f2d2d;" edge="1" parent="1" source="gw_valid" target="revise">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#0f6b45;fontColor=#0f6b45;" edge="1" parent="1" source="gw_valid" target="review">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="396" y="547" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#334155;" edge="1" parent="1" source="review" target="gw_dec">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="Reject" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#9f2d2d;fontColor=#9f2d2d;" edge="1" parent="1" source="gw_dec" target="end_sup">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" value="Approve" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#0f6b45;fontColor=#0f6b45;" edge="1" parent="1" source="gw_dec" target="gw_hr">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="396" y="652" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#0f6b45;fontColor=#0f6b45;" edge="1" parent="1" source="gw_hr" target="hr">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#334155;" edge="1" parent="1" source="hr" target="gw_hrdec">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="Reject" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#9f2d2d;fontColor=#9f2d2d;" edge="1" parent="1" source="gw_hrdec" target="end_hr">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" value="Approve" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#0f6b45;fontColor=#0f6b45;" edge="1" parent="1" source="gw_hrdec" target="post">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#0f6b45;fontColor=#0f6b45;" edge="1" parent="1" source="gw_hr" target="post">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#0f6b45;" edge="1" parent="1" source="post" target="end_ok">
+          <mxGeometry relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" value="Return" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;strokeColor=#9a6700;fontColor=#9a6700;" edge="1" parent="1" source="gw_dec" target="revise">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="652" />
+              <mxPoint x="1000" y="1184" />
+              <mxPoint x="40" y="1184" />
+              <mxPoint x="40" y="442" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="start" value="Leave needed" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1e3a5f;strokeWidth=1.75;fontColor=#64748b;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="132" y="144" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="submit" value="Submit leave request" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#ffffff;strokeColor=#1e3a5f;strokeWidth=1.5;fontColor=#0f172a;fontSize=13;fontStyle=1;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="56" y="196" width="184" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="revise" value="Revise request" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#ffffff;strokeColor=#1e3a5f;strokeWidth=1.5;fontColor=#0f172a;fontSize=13;fontStyle=1;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="56" y="406" width="184" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="validate" value="Validate request" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#ffffff;strokeColor=#1e3a5f;strokeWidth=1.5;fontColor=#0f172a;fontSize=13;fontStyle=1;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="296" y="292" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_valid" value="Valid?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#9a7040;strokeWidth=1.5;fontColor=#7c5a28;fontSize=11;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="366" y="412" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="review" value="Review request" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#ffffff;strokeColor=#1e3a5f;strokeWidth=1.5;fontColor=#0f172a;fontSize=13;fontStyle=1;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="536" y="512" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_dec" value="Decision" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#9a7040;strokeWidth=1.5;fontColor=#7c5a28;fontSize=11;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="614" y="622" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="end_sup" value="Rejected" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9f2d2d;strokeWidth=3;fontColor=#9f2d2d;fontSize=11;fontStyle=1;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="628" y="738" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_hr" value="HR needed?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#9a7040;strokeWidth=1.5;fontColor=#7c5a28;fontSize=11;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="366" y="812" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hr" value="HR review" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#ffffff;strokeColor=#1e3a5f;strokeWidth=1.5;fontColor=#0f172a;fontSize=13;fontStyle=1;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="802" y="808" width="176" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="gw_hrdec" value="Decision" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#9a7040;strokeWidth=1.5;fontColor=#7c5a28;fontSize=11;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="862" y="932" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="post" value="Update balance and calendar" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#ffffff;strokeColor=#1e3a5f;strokeWidth=1.5;fontColor=#0f172a;fontSize=13;fontStyle=1;fontFamily=Inter;" vertex="1" parent="1">
+          <mxGeometry x="286" y="928" width="220" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="end_ok" value="Approved" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0f6b45;strokeWidth=3;fontColor=#0f6b45;fontSize=11;fontStyle=1;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1062" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="end_hr" value="Rejected" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9f2d2d;strokeWidth=3;fontColor=#9f2d2d;fontSize=11;fontStyle=1;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="876" y="1062" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="rule" value="HR approval when working days &gt; 3, or the leave is unpaid or special." style="shape=note;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#d6b56a;fontColor=#475569;fontSize=11;align=left;spacingLeft=6;size=14;" vertex="1" parent="1">
+          <mxGeometry x="788" y="140" width="210" height="64" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

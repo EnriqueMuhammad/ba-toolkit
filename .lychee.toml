@@ -1,0 +1,17 @@
+# Link check used by GitHub Actions and by lychee locally.
+# The workflow badge 404s until this workflow exists on the default branch.
+# Shields.io is a generated badge host, not a document we maintain.
+
+verbose = "warn"
+no_progress = true
+max_retries = 4
+timeout = 20
+max_concurrency = 8
+accept = ["200", "206", "429"]
+
+exclude = [
+  'https://github.com/EnriqueMuhammad/ba-toolkit/actions/',
+  'https://img\.shields\.io/',
+]
+
+exclude_path = ["node_modules"]

@@ -1,0 +1,42 @@
+requirement_id,requirement_type,statement,source,moscow,business_rule_ids,user_story_ids,use_case_ids,process_ref,test_case_ids,status,notes
+BRQ-01,Business,An employee can see remaining annual leave without asking HR.,GAP-02,Must,,US-01,,Balance,TC-01,Baselined,
+BRQ-02,Business,"A leave request and its decision are recorded with requester, approver, time, and comment.",GAP-01 GAP-08,Must,,US-02 US-04,UC-01 UC-02,Submit and decide,TC-02 TC-09,Baselined,
+BRQ-03,Business,A supervisor can see approved leave in their own department before approving.,GAP-04,Must,,US-06,,Department calendar,TC-18,Baselined,
+BRQ-04,Business,"The annual balance changes when annual leave or cuti bersama is approved, and is restored on a valid cancellation.",GAP-02,Must,BR-02,US-02 US-07,UC-03,Update balance and calendar,TC-02 TC-14 TC-19,Baselined,
+BRQ-05,Business,"HR publishes holidays and cuti bersama once, and day counts use that calendar.",GAP-03,Must,,US-08,,Validate request,TC-19 TC-21,Baselined,
+BRQ-06,Business,Sick-leave reason and file are limited to the employee and HR.,GAP-05 decision D4,Must,BR-11,US-03,,Submit leave request,TC-06 TC-15,Baselined,
+BRQ-07,Business,HR can export approved leave for a month without retyping it.,GAP-06 decision D6,Must,,US-09,,,TC-17,Baselined,
+BR-01,Business rule,12 annual working days after 12 months of service. Balance is 0 before that.,"Workshop, unconfirmed against the regulation",Must,,US-01,,,TC-01,Baselined,Configurable. Open question Q1.
+BR-02,Business rule,"Only annual leave and cuti bersama deduct the annual balance, and only on approval.",Workshop,Must,,US-02 US-03 US-07,UC-02 UC-03,Update balance and calendar,TC-02 TC-06 TC-08 TC-14,Baselined,
+BR-03,Business rule,Sick leave of more than one working day needs an attachment before submit.,"Workshop, unconfirmed against the regulation",Must,,US-03,UC-01,Validate request,TC-05,Baselined,
+BR-04,Business rule,Annual leave starts at least three working days after submission.,Workshop,Must,,US-02,UC-01,Validate request,TC-04,Baselined,"Example: submitted 18 Nov 2026, earliest start 23 Nov 2026."
+BR-05,Business rule,"A half day is annual leave, one working day, morning or afternoon, and deducts 0.5.",CR-001,Must,,US-11,UC-01,Submit leave request,TC-13,Baselined,
+BR-06,Business rule,"HR approves after the supervisor when working days exceed 3, or the type is unpaid or special.",Decision D3,Must,,US-05,UC-02,HR needed?,TC-07 TC-08 TC-20,Baselined,
+BR-07,Business rule,"Weekends, public holidays, and cuti bersama dates are not counted as requested leave days.",Workshop,Must,,US-02,UC-01,Validate request,TC-21,Baselined,
+BR-08,Business rule,"Overlapping Submitted, Returned, Pending HR, or Approved dates are refused.",BRD 1.0 review,Must,,US-02,UC-01,Validate request,TC-11,Baselined,
+BR-09,Business rule,Finance annual leave cannot overlap a configured blackout.,Decision D5,Must,,US-02,UC-01,Validate request,TC-12,Baselined,
+BR-10,Business rule,The employee may cancel an approved request only when the start is at least one working day away.,BRD 1.0 review,Must,,US-07,UC-03,,TC-14,Baselined,
+BR-11,Business rule,Sick-leave reason and attachments are visible to the employee and HR only.,Decision D4,Must,,US-03,,,TC-15 TC-18,Baselined,
+BR-12,Business rule,"Status changes and balance adjustments store actor, Asia/Jakarta timestamp, and comment.",GAP-08,Must,,US-04 US-08,UC-02,,TC-09 TC-16,Baselined,
+BR-13,Business rule,"HR creates cuti bersama as approved leave, deducted once.",Workshop,Must,,US-08,UC-04,,TC-19,Baselined,
+FR-01,Functional,A session exists only for a company Google account that matches an active employee.,Decision D7,Must,,US-01,,,TC-22,Baselined,
+FR-02,Functional,"The employee sees entitled, used, and remaining annual days.",BRQ-01 BR-01,Must,BR-01,US-01,,Balance,TC-01,Baselined,
+FR-03,Functional,An employee can save a draft without notifying an approver.,UC-01,Must,,US-02,UC-01,Submit leave request,,Baselined,Covered by the save extension. No separate UAT case. Drafts are asserted absent in TC-17 and TC-18.
+FR-04,Functional,Working days exclude weekends and published holidays and cuti bersama.,BR-07 BRQ-05,Must,BR-07,US-02,UC-01,Validate request,TC-02 TC-21,Baselined,
+FR-05,Functional,"Submit is refused, and the balance unchanged, when BR-01, BR-03, BR-04, BR-08, BR-09 fail or the count is 0.",Those rules,Must,,US-02 US-03,UC-01,Valid?,TC-03 TC-04 TC-05 TC-11 TC-12,Baselined,
+FR-06,Functional,A valid submit sets Submitted and emails the supervisor without sick-leave attachments.,BRQ-02,Must,,US-02 US-10,UC-01,Submit leave request,TC-02 TC-10,Baselined,
+FR-07,Functional,"The supervisor can approve, reject, or return a direct report's Submitted request. Reject and return need a comment.",BRQ-02,Must,,US-04,UC-02,Supervisor decision,TC-02 TC-09 TC-10,Baselined,
+FR-08,Functional,"BR-06 routes to Pending HR. HR can approve, reject, or return.",BR-06,Must,BR-06,US-05,UC-02,HR needed?,TC-07 TC-08 TC-20,Baselined,
+FR-09,Functional,"Approval deducts annual balance only for annual leave and cuti bersama, and updates the department calendar.",BR-02 BRQ-03,Must,BR-02,US-04 US-06,UC-02,Update balance and calendar,TC-02 TC-06 TC-18,Baselined,
+FR-10,Functional,"The employee is emailed on approve, reject, and return, including the comment.",BRQ-02,Must,,US-04,UC-02,,TC-02 TC-09,Baselined,
+FR-11,Functional,The employee can cancel a future approved request and the deduction is restored.,BR-10,Must,BR-10,US-07,UC-03,,TC-14,Baselined,
+FR-12,Functional,Sick-leave reason and attachments are returned only to the employee and HR Admin.,BR-11,Must,BR-11,US-03,,,TC-15,Baselined,
+FR-13,Functional,"HR maintains holidays, blackouts, commented adjustments, and a one-time cuti bersama run.",BR-09 BR-12 BR-13,Must,,US-08,UC-04,,TC-16 TC-19,Baselined,
+FR-14,Functional,Monthly CSV lists approved leave dates and omits other statuses.,BRQ-07,Must,,US-09,,,TC-17,Baselined,
+FR-15,Functional,"Status changes and adjustments store actor, timestamp, and comment.",BR-12,Must,BR-12,US-04 US-08,,,TC-09 TC-16,Baselined,
+FR-16,Functional,Half-day annual leave stores 0.5 and morning or afternoon.,BR-05 CR-001,Must,BR-05,US-11,UC-01,Submit leave request,TC-13,Baselined,
+NFR-01,Non-functional,"Bahasa Indonesia by default, English available and persisted.",Decision D7,Must,,,,,,Baselined,"Checked at UAT entry, not a numbered case."
+NFR-02,Non-functional,Balance page and supervisor queue usable within 2 seconds on a 10 Mbps office connection with the 95-employee fixture.,FSD,Should,,,,,,Baselined,Spot check at UAT entry. Not a load test. Severity if unusable is an entry blocker.
+NFR-03,Non-functional,"Pilot availability target 99.5 percent on weekdays 08:00-18:00 WIB, excluding announced maintenance.",FSD,Should,,,,,,Baselined,IT uptime check. Not a penalty clause and not a UAT click.
+NFR-04,Non-functional,Audit events and attachments retained for five years.,FSD,Must,,,,,,Baselined,IT confirms in writing before go-live.
+NFR-05,Non-functional,"Permissions are enforced on the server, not only in the interface.",FSD section 2,Must,,US-03,,,TC-15 TC-22,Baselined,
