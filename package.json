@@ -1,0 +1,12 @@
+{
+  "name": "ba-toolkit",
+  "private": true,
+  "description": "Business analyst templates, a worked leave-request example, and diagram sources.",
+  "scripts": {
+    "lint": "markdownlint-cli2",
+    "links": "lychee --config .lychee.toml \"**/*.md\""
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "0.17.2"
+  }
+}
